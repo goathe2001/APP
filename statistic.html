@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link href='./assets/plugins/boxicons/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-container">
+            <i class="bx bxl-c-plus-plus"></i>
+            <span class="logo-title">Backend</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="./index.html">
+                    <i class='bx bxs-grid'></i>
+                    <span class="link-item">Marketplace</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="./index.html">Marketplace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="link-item">Dashboard</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_balance.html">Balance</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_transaction.html">Transaction</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_system_log.html">System Log</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./statistic.html">
+                    <i class='bx bx-time'></i>
+                    <span class="link-item">Statistic</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="./statistic.html">Statistic</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-stats'></i>
+                    <span class="link-item">Line</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Line</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="link-item">Chart</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Chart</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bx-rotate-right'></i>
+                        <span class="link-item">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Category</a>
+                    </li>
+                    <li>
+                        <a href="#">HTML & CSS</a>
+                    </li>
+                    <li>
+                        <a href="#">Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#">Python</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bxs-bookmark'></i>
+                        <span class="link-item">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="#">Login Form</a>
+                    </li>
+                    <li>
+                        <a href="#">Card Design</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-printer'></i>
+                    <span class="link-item">Print</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Print</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="link-item">Settings</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Settings</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-error'></i>
+                    <span class="link-item">Error</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Error</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="link-item">Help</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Help</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="link-item">Account</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Account</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <section class="right-section">
+        <div class="header-container">
+            <div class="header-title-container">
+                <i class='bx bx-menu'></i>
+                <span class="title">Statistic</span>
+            </div>
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-item">
+                        <div class="border p-1 text-muted">08/27/2021 23:18 - 09/03/2021 21:18</div>
+                    </div>
+                    <div class="nav-item">
+                        <i class='bx bx-refresh'></i>
+                    </div>
+                    <div class="nav-item wifi">
+                        <i class='bx bx-wifi'></i>
+                    </div>
+                    <div class="nav-item">
+                        <i class='bx bxs-show'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#your-stats" role="tab"
+                        aria-controls="your-stats" aria-selected="true">Your stats</a>
+                    <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#your-stats" role="tab"
+                        aria-controls="global-stats" aria-selected="false">Global stats</a>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="your-stats" role="tabpanel"
+                            aria-labelledby="your-stats-tab">
+                            <div class="card border-0 rounded-0">
+                                <div class="card-header border-0">
+                                    <div class="row">
+                                        <div class="col-md-8 primary-color">
+                                            BUYS AND SELLS
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="text-right d-flex justify-content-end">
+                                                <div class="expand-btn">
+                                                    <i class='bx bx-minus'></i>
+                                                </div>
+                                                <div class="close-btn">
+                                                    <i class='bx bx-x'></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="buys-and-sells-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="global-stats" role="tabpanel" aria-labelledby="global-stats-tab">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-header border-0 rounded-0">
+                            <div class="row">
+                                <div class="col-md-8 primary-color">
+                                    ALLOCATION OF FUNDS
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-right d-flex justify-content-end">
+                                        <div class="expand-btn">
+                                            <i class='bx bx-minus'></i>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class='bx bx-x'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="allocation-pie-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-header border-0 rounded-0">
+                            <div class="row">
+                                <div class="col-md-8 primary-color">
+                                    PROFIT STATS
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-right d-flex justify-content-end">
+                                        <div class="expand-btn">
+                                            <i class='bx bx-minus'></i>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class='bx bx-x'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item pl-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="primary-color font-weight-bold mr-2">
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-muted">BTC INVESTMENT:</div>
+                                            <span>0.00000000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item pl-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="primary-color font-weight-bold mr-2">
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-muted">BTC RETURNS:</div>
+                                            <span class="text-success">0.00000000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item pl-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="primary-color font-weight-bold mr-2">
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-muted">CURRENT BTC IN POSITIONS:</div>
+                                            <span>0.00000000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item pl-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="primary-color font-weight-bold mr-2">
+                                            <i class='bx bx-right-arrow-alt'></i>
+                                        </div>
+                                        <div>
+                                            <div class="text-muted">FEES BTC:</div>
+                                            <span>0.00000000</span>
+                                        </div>
+                                    </div>
+                                </li>
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-header border-0 rounded-0">
+                            <div class="row">
+                                <div class="col-md-8 primary-color">
+                                    PROFITS BASED ON SELL TRIGGERS
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-right d-flex justify-content-end">
+                                        <div class="expand-btn">
+                                            <i class='bx bx-minus'></i>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class='bx bx-x'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="allocation-pie-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-header border-0 rounded-0">
+                            <div class="row">
+                                <div class="col-md-8 primary-color">
+                                    PROFITS BASED ON BUY TRIGGERS
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-right d-flex justify-content-end">
+                                        <div class="expand-btn">
+                                            <i class='bx bx-minus'></i>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class='bx bx-x'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="allocation-pie-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-header border-0 rounded-0">
+                            <div class="row">
+                                <div class="col-md-8 primary-color">
+                                    DAILY PROFITS
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-right d-flex justify-content-end">
+                                        <div class="expand-btn">
+                                            <i class='bx bx-minus'></i>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class='bx bx-x'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="daily-profits-chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab1" role="tablist1">
+                        <a class="nav-link" id="nav-total-btc-assets-tab" data-toggle="tab" href="#total-btc-assets" role="tab"
+                            aria-controls="your-stats" aria-selected="false">Total BTC in assets</a>
+                        <a class="nav-link active" id="nav-total-usd-assets-tab" data-toggle="tab" href="#total-btc-assets" role="tab"
+                            aria-controls="total-usd-assets" aria-selected="true">Total USD in assets</a>
+                    </div>
+                </nav>
+                <div class="col-md-12">
+                    <div class="tab-content" id="nav-tabContent1">
+                        <div class="tab-pane fade show active" id="total-btc-assets" role="tabpanel"
+                            aria-labelledby="total-btc-assets-tab">
+                            <div class="card border-0 rounded-0">
+                                <div class="card-body">
+                                    <div id="total-btc-assets-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        Highcharts.chart('buys-and-sells-chart', {
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Buys & Sells'
+                }
+            },
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            plotOptions: {
+                spline: {
+                    marker: {
+                        radius: 4,
+                        lineColor: '#666666',
+                        lineWidth: 1
+                    }
+                }
+            },
+            series: [{
+                name: 'Buys',
+                marker: {
+                    symbol: 'square'
+                },
+                data: [7.0, 7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 23.3, 18.3, 13.9, 9.6]
+
+            }, {
+                name: 'Sells',
+                marker: {
+                    symbol: 'diamond'
+                },
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+        // Create the chart
+        Highcharts.chart('allocation-pie-chart', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+
+            accessibility: {
+                announceNewData: {
+                    enabled: true
+                },
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.1f}%'
+                    }
+                }
+            },
+
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+            },
+
+            series: [
+                {
+                    name: "Browsers",
+                    colorByPoint: true,
+                    data: [
+                        {
+                            name: "Chrome",
+                            y: 62.74,
+                            drilldown: "Chrome"
+                        },
+                        {
+                            name: "Firefox",
+                            y: 10.57,
+                            drilldown: "Firefox"
+                        },
+                        {
+                            name: "Other",
+                            y: 7.62,
+                            drilldown: null
+                        }
+                    ]
+                }
+            ],
+            drilldown: {
+                series: [
+                    {
+                        name: "Chrome",
+                        id: "Chrome",
+                        data: [
+                            [
+                                "v65.0",
+                                0.1
+                            ],
+                            [
+                                "v64.0",
+                                1.3
+                            ],
+                            [
+                                "v63.0",
+                                53.02
+                            ],
+                            [
+                                "v62.0",
+                                1.4
+                            ],
+                            [
+                                "v61.0",
+                                0.88
+                            ],
+                            [
+                                "v60.0",
+                                0.56
+                            ],
+                            [
+                                "v59.0",
+                                0.45
+                            ],
+                            [
+                                "v58.0",
+                                0.49
+                            ],
+                            [
+                                "v57.0",
+                                0.32
+                            ],
+                            [
+                                "v56.0",
+                                0.29
+                            ],
+                            [
+                                "v55.0",
+                                0.79
+                            ],
+                            [
+                                "v54.0",
+                                0.18
+                            ],
+                            [
+                                "v51.0",
+                                0.13
+                            ],
+                            [
+                                "v49.0",
+                                2.16
+                            ],
+                            [
+                                "v48.0",
+                                0.13
+                            ],
+                            [
+                                "v47.0",
+                                0.11
+                            ],
+                            [
+                                "v43.0",
+                                0.17
+                            ],
+                            [
+                                "v29.0",
+                                0.26
+                            ]
+                        ]
+                    },
+                    {
+                        name: "Firefox",
+                        id: "Firefox",
+                        data: [
+                            [
+                                "v58.0",
+                                1.02
+                            ],
+                            [
+                                "v57.0",
+                                7.36
+                            ],
+                            [
+                                "v56.0",
+                                0.35
+                            ],
+                            [
+                                "v55.0",
+                                0.11
+                            ],
+                            [
+                                "v54.0",
+                                0.1
+                            ],
+                            [
+                                "v52.0",
+                                0.95
+                            ],
+                            [
+                                "v51.0",
+                                0.15
+                            ],
+                            [
+                                "v50.0",
+                                0.1
+                            ],
+                            [
+                                "v48.0",
+                                0.31
+                            ],
+                            [
+                                "v47.0",
+                                0.12
+                            ]
+                        ]
+                    },
+                    {
+                        name: "Opera",
+                        id: "Opera",
+                        data: [
+                            [
+                                "v50.0",
+                                0.96
+                            ],
+                            [
+                                "v49.0",
+                                0.82
+                            ],
+                            [
+                                "v12.1",
+                                0.14
+                            ]
+                        ]
+                    }
+                ]
+            }
+        });
+        Highcharts.chart('total-btc-assets-chart', {
+            chart: {
+                type: 'line'
+            },
+            title: {
+                text: 'Total BTC in assets'
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Total'
+                }
+            },
+            plotOptions: {
+                line: {
+                    dataLabels: {
+                        enabled: true
+                    },
+                    enableMouseTracking: false
+                }
+            },
+            series: [{
+                name: 'Total BTC in assets',
+                data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }]
+        });
+        Highcharts.chart('daily-profits-chart', {
+            chart: {
+                type: 'spline'
+            },
+            title: {
+                text: ''
+            },
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Buys & Sells'
+                }
+            },
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            plotOptions: {
+                spline: {
+                    marker: {
+                        radius: 4,
+                        lineColor: '#666666',
+                        lineWidth: 1
+                    }
+                }
+            },
+            series: [{
+                name: 'Buys',
+                marker: {
+                    symbol: 'square'
+                },
+                data: [7.0, 7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 23.3, 18.3, 13.9, 9.6]
+
+            }, {
+                name: 'Sells',
+                marker: {
+                    symbol: 'diamond'
+                },
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+    </script>
+</body>
+
+</html>

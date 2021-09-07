@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link href='./assets/plugins/boxicons/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-container">
+            <i class="bx bxl-c-plus-plus"></i>
+            <span class="logo-title">Backend</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="./index.html">
+                    <i class='bx bxs-grid'></i>
+                    <span class="link-item">Marketplace</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="./index.html">Marketplace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="link-item">Dashboard</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_balance.html">Balance</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_transaction.html">Transaction</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_system_log.html">System Log</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./statistic.html">
+                    <i class='bx bx-time'></i>
+                    <span class="link-item">Statistic</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="./statistic.html">Statistic</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-stats'></i>
+                    <span class="link-item">Line</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Line</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="link-item">Chart</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Chart</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bx-rotate-right'></i>
+                        <span class="link-item">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Category</a>
+                    </li>
+                    <li>
+                        <a href="#">HTML & CSS</a>
+                    </li>
+                    <li>
+                        <a href="#">Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#">Python</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bxs-bookmark'></i>
+                        <span class="link-item">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="#">Login Form</a>
+                    </li>
+                    <li>
+                        <a href="#">Card Design</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-printer'></i>
+                    <span class="link-item">Print</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Print</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="link-item">Settings</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Settings</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-error'></i>
+                    <span class="link-item">Error</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Error</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="link-item">Help</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Help</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="link-item">Account</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Account</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <section class="right-section">
+        <div class="header-container">
+            <div class="header-title-container">
+                <i class='bx bx-menu'></i>
+                <span class="title">Dashboard balance and currency holdings</span>
+            </div>
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-item">
+                        <div class="poineer">
+                            <i class='bx bx-star'></i>
+                            <span>Poineer</span>
+                        </div>
+                    </div>
+                    <div class="nav-item wifi">
+                        <i class='bx bx-wifi'></i>
+                    </div>
+                    <div class="nav-item">
+                        <i class='bx bxs-show'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <h2>Error</h2>
+                        <div>
+                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        </div>
+                        <a href="#" class="btn btn-danger">Edit config</a>
+                    </div>
+                    <div>
+                        <div class="card border-0 rounded-0">
+                            <div class="card-header border-0 rounded-0">
+                                <div class="row">
+                                    <div class="col-md-8 primary-color">
+                                        OPEN ORDERS
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-right d-flex justify-content-end">
+                                            <div class="expand-btn">
+                                                <i class='bx bx-refresh'></i>
+                                            </div>
+                                            <div class="expand-btn">
+                                                <i class='bx bx-minus'></i>
+                                            </div>
+                                            <div class="close-btn">
+                                                <i class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    No current active/open orders placed by Cryptohoper.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-link" id="nav-open-positions-tab" data-toggle="tab" href="#open-positions"
+                                    role="tab" aria-controls="open-positions" aria-selected="true">Open Positions</a>
+                                <a class="nav-link active" id="nav-short-positions-tab" data-toggle="tab"
+                                    href="#short-positions" role="tab" aria-controls="short-positions"
+                                    aria-selected="false">Short Positions <i class='bx bx-refresh'></i></a>
+                                <a class="nav-link" id="nav-reserved-funds-tab" data-toggle="tab" href="#reserved-funds"
+                                    role="tab" aria-controls="reserved-funds" aria-selected="false">Reserved Funds</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="short-positions" role="tabpanel"
+                                aria-labelledby="open-positions-tab">
+                                <div class="card border-0 rounded-0">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="text-muted">
+                                                There are your current open short positions. <i
+                                                    class='bx bx-help-circle text-info'></i>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check mr-1">
+                                                    <input class="form-check-input" type="radio" name="marketOrders"
+                                                        id="market-orders" value="option1">
+                                                    <label class="form-check-label" for="market-orders">
+                                                        Market Orders
+                                                    </label>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <button class="btn btn-secondary btn-sm dropdown-toggle"
+                                                        type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Bulk actions
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="card border-0 rounded-0">
+                            <div class="card-header border-0 rounded-0">
+                                <div class="row">
+                                    <div class="col-md-8 primary-color">
+                                        SUMMARY OPEN POSITIONS
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-right d-flex justify-content-end">
+                                            <div class="expand-btn">
+                                                <i class='bx bx-refresh'></i>
+                                            </div>
+                                            <div class="expand-btn">
+                                                <i class='bx bx-minus'></i>
+                                            </div>
+                                            <div class="close-btn">
+                                                <i class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="summary-open-order-pie-chart"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="text-muted text-center font-weight-bold">
+                                            Total current positions
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-muted">Cost</div>
+                                                <div>0.53534289</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div class="text-muted">Result</div>
+                                                <div class="text-success">3.37%</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div class="text-muted">Age</div>
+                                                <div>11 days</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div class="text-muted">Positions</div>
+                                                <div>13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="card border-0 rounded-0">
+                            <div class="card-header border-0 rounded-0">
+                                <div class="row">
+                                    <div class="col-md-8 primary-color">
+                                        LASTEST 5 SELLS
+                                        <span class="text-info">
+                                            <i class='bx bx-history'></i>
+                                            All trade history
+                                        </span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-right d-flex justify-content-end">
+                                            <div class="expand-btn">
+                                                <i class='bx bx-refresh'></i>
+                                            </div>
+                                            <div class="expand-btn">
+                                                <i class='bx bx-minus'></i>
+                                            </div>
+                                            <div class="close-btn">
+                                                <i class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-muted">
+                                    No current active/open orders placed by Cryptohoper.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-header border-0 rounded-0">
+                            <div class="row">
+                                <div class="col-md-8 primary-color">
+                                    STATS
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-right d-flex justify-content-end">
+                                        <div class="expand-btn">
+                                            <i class='bx bx-minus'></i>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class='bx bx-x'></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="text-success" style="font-size: 30px;font-weight: 400;">
+                                    <i class='bx bx-trending-up'></i>
+                                </div>
+                                <div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="text-muted">
+                                                TOTAL IN POSITIONS:
+                                                <i class='bx bx-help-circle text-info'></i>
+                                            </div>
+                                            <span class="primary-color font-weight-bold">-0.02441665 BTC</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="text-muted">
+                                                TOTAL FEES PAID:
+                                                <i class='bx bx-help-circle text-info'></i>
+                                            </div>
+                                            <span class="primary-color font-weight-bold">0.00000000 BTC</span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="text-muted">
+                                                CURRENT PROFIT:
+                                                <i class='bx bx-help-circle text-info'></i>
+                                            </div>
+                                            <div class="text-success font-weight-bold">0.05816169 BTC (11.63%)</div>
+                                            <a href="#" class="text-info">reset</a>
+                                            <span class="text-info">|</span>
+                                            <a href="#" class="text-info">info</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        Highcharts.chart('summary-open-order-pie-chart', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+
+            accessibility: {
+                announceNewData: {
+                    enabled: true
+                },
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.1f}%'
+                    }
+                }
+            },
+
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+            },
+
+            series: [
+                {
+                    name: "Summary",
+                    colorByPoint: true,
+                    data: [
+                        {
+                            name: "LTC",
+                            y: 62,
+                            drilldown: null
+                        },
+                        {
+                            name: "XML",
+                            y: 5,
+                            drilldown: null
+                        },
+                        {
+                            name: "ETH",
+                            y: 14,
+                            drilldown: null
+                        },
+                        {
+                            name: "EOS",
+                            y: 19,
+                            drilldown: null
+                        }
+                    ]
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>

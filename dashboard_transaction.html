@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link href='./assets/plugins/boxicons/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <style>
+        .upload-btn {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .error-btn {
+            font-size: 60px;
+            font-weight: 600;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-container">
+            <i class="bx bxl-c-plus-plus"></i>
+            <span class="logo-title">Backend</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="./index.html">
+                    <i class='bx bxs-grid'></i>
+                    <span class="link-item">Marketplace</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="./index.html">Marketplace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bxs-dashboard'></i>
+                        <span class="link-item">Dashboard</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_orders.html">Orders</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_balance.html">Balance</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_transaction.html">Transaction</a>
+                    </li>
+                    <li>
+                        <a href="./dashboard_system_log.html">System Log</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="./statistic.html">
+                    <i class='bx bx-time'></i>
+                    <span class="link-item">Statistic</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="./statistic.html">Statistic</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-stats'></i>
+                    <span class="link-item">Line</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Line</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="link-item">Chart</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Chart</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bx-rotate-right'></i>
+                        <span class="link-item">Category</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Category</a>
+                    </li>
+                    <li>
+                        <a href="#">HTML & CSS</a>
+                    </li>
+                    <li>
+                        <a href="#">Javascript</a>
+                    </li>
+                    <li>
+                        <a href="#">Python</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-container">
+                    <a href="#">
+                        <i class='bx bxs-bookmark'></i>
+                        <span class="link-item">Posts</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="link-item-title" href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Web Design</a>
+                    </li>
+                    <li>
+                        <a href="#">Login Form</a>
+                    </li>
+                    <li>
+                        <a href="#">Card Design</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-printer'></i>
+                    <span class="link-item">Print</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Print</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="link-item">Settings</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Settings</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-error'></i>
+                    <span class="link-item">Error</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Error</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="link-item">Help</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Help</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-user'></i>
+                    <span class="link-item">Account</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li>
+                        <a class="link-item-title" href="#">Account</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <section class="right-section">
+        <div class="header-container">
+            <div class="header-title-container">
+                <i class='bx bx-menu'></i>
+                <span class="title">Dashboard/User transaction record</span>
+            </div>
+            <div class="navbar-container">
+                <div class="navbar">
+                    <div class="nav-item">
+                        <div class="poineer">
+                            <i class='bx bx-star'></i>
+                            <span>Poineer</span>
+                        </div>
+                    </div>
+                    <div class="nav-item wifi">
+                        <i class='bx bx-wifi'></i>
+                    </div>
+                    <div class="nav-item">
+                        <i class='bx bxs-show'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-md-8">
+                    <div>
+                        <div class="card border-0 rounded-0">
+                            <div class="card-header border-0 rounded-0">
+                                <div class="row">
+                                    <div class="col-md-8 primary-color">
+                                        SUMMARY OPEN POSITIONS
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-right d-flex justify-content-end">
+                                            <div class="expand-btn">
+                                                <i class='bx bx-refresh'></i>
+                                            </div>
+                                            <div class="expand-btn">
+                                                <i class='bx bx-minus'></i>
+                                            </div>
+                                            <div class="close-btn">
+                                                <i class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div id="summary-open-order-pie-chart"></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="text-muted text-center font-weight-bold">
+                                            TOTAL ITC
+                                        </div>
+                                        <hr>
+                                        <div class="mt-3">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-muted">Cost</div>
+                                                <div>0.31989051</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div class="text-muted">Result</div>
+                                                <div class="text-success">6.78%</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div class="text-muted">Age</div>
+                                                <div>11 days</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-2">
+                                                <div class="text-muted">Positions</div>
+                                                <div>13</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="card border-0 rounded-0">
+                            <div class="card-header border-0 rounded-0">
+                                <div class="row">
+                                    <div class="col-md-8 primary-color">
+                                        LASTEST 5 SELLS
+                                        <span class="text-info">
+                                            <i class='bx bx-history'></i>
+                                            All trade history
+                                        </span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-right d-flex justify-content-end">
+                                            <div class="expand-btn">
+                                                <i class='bx bx-refresh'></i>
+                                            </div>
+                                            <div class="expand-btn">
+                                                <i class='bx bx-minus'></i>
+                                            </div>
+                                            <div class="close-btn">
+                                                <i class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                        <tr>
+                                            <th>Currency</th>
+                                            <th>Total</th>
+                                            <th>Result</th>
+                                            <th>Trigger</th>
+                                            <th>Date</th>
+                                            <th>View</th>
+                                        </tr>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-info align-middle">EOS</td>
+                                            <td class="align-middle">0.02945418</td>
+                                            <td class="text-success align-middle">2.06%</td>
+                                            <td class="align-middle">Profit</td>
+                                            <td class="align-middle">08/24/2021 15:33:40</td>
+                                            <td class="align-middle">
+                                                <a href="#" class="btn btn-info btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-info align-middle">EOS</td>
+                                            <td class="align-middle">0.02945418</td>
+                                            <td class="text-success align-middle">2.06%</td>
+                                            <td class="align-middle">Profit</td>
+                                            <td class="align-middle">08/24/2021 15:33:40</td>
+                                            <td class="align-middle">
+                                                <a href="#" class="btn btn-info btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-info align-middle">ZRX</td>
+                                            <td class="align-middle">0.02945418</td>
+                                            <td class="text-success align-middle">2.06%</td>
+                                            <td class="align-middle">Profit</td>
+                                            <td class="align-middle">08/24/2021 15:33:40</td>
+                                            <td class="align-middle">
+                                                <a href="#" class="btn btn-info btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-info align-middle">ZRX</td>
+                                            <td class="align-middle">0.02945418</td>
+                                            <td class="text-success align-middle">2.06%</td>
+                                            <td class="align-middle">Profit</td>
+                                            <td class="align-middle">08/24/2021 15:33:40</td>
+                                            <td class="align-middle">
+                                                <a href="#" class="btn btn-info btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-info align-middle">XRM</td>
+                                            <td class="align-middle">0.02945418</td>
+                                            <td class="text-success align-middle">2.06%</td>
+                                            <td class="align-middle">Profit</td>
+                                            <td class="align-middle">08/24/2021 15:33:40</td>
+                                            <td class="align-middle">
+                                                <a href="#" class="btn btn-info btn-sm">View</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="card border-0 rounded-0">
+                            <div class="card-header border-0 rounded-0">
+                                <div class="row">
+                                    <div class="col-md-8 primary-color">
+                                        OPEN ORDERS
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="text-right d-flex justify-content-end">
+                                            <div class="expand-btn">
+                                                <i class='bx bx-refresh'></i>
+                                            </div>
+                                            <div class="expand-btn">
+                                                <i class='bx bx-minus'></i>
+                                            </div>
+                                            <div class="close-btn">
+                                                <i class='bx bx-x'></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 rounded-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="text-success upload-btn">
+                                    <i class='bx bx-cloud-upload'></i>
+                                </div>
+                                <div class="ml-3">
+                                    <input type="checkbox" id="checkbox_c2" class="chk_3" checked /><label for="checkbox_c2"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 mt-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="error-btn">
+                                    <i class='bx bx-error'></i>
+                                </div>
+                                <div class="ml-3">
+                                    <div class="">
+                                        <div class="text-muted">
+                                            SELL POSITIONS AND TOP <i class='bx bx-help-circle text-info' ></i>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-info">Panic Button</button>
+                                        </div>
+                                        <div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                  Use market orders
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        Highcharts.chart('summary-open-order-pie-chart', {
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+
+            accessibility: {
+                announceNewData: {
+                    enabled: true
+                },
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}: {point.y:.1f}%'
+                    }
+                }
+            },
+
+            tooltip: {
+                headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+                pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+            },
+
+            series: [
+                {
+                    name: "Summary",
+                    colorByPoint: true,
+                    data: [
+                        {
+                            name: "LTC",
+                            y: 62,
+                            drilldown: null
+                        },
+                        {
+                            name: "XML",
+                            y: 5,
+                            drilldown: null
+                        },
+                        {
+                            name: "ETH",
+                            y: 14,
+                            drilldown: null
+                        },
+                        {
+                            name: "EOS",
+                            y: 19,
+                            drilldown: null
+                        }
+                    ]
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
